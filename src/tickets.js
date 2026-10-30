@@ -26,7 +26,7 @@ function buildMenu() {
 async function sendMenu(channel) {
   const embed = new EmbedBuilder()
     .setColor(config.color)
-    .setTitle('Tickets Haru')
+    .setTitle('Tickets Silent')
     .setDescription('↳ Le support du serveur est disponible 24h/24 !');
   await channel.send({ embeds: [embed], components: [buildMenu()] });
 }
